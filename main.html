@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<h1> RC4 Algorithm</h1>
+<form onsubmit="formSubmit(event)">
+
+<div class="referenceKey">Reference data for Key</div>
+<div class="referenceText">ABCDEF0123456789ABC2018200391883</div>
+<div class="referenceKey"> Reference data for text</div>
+<div class="referenceText">A Hare was making fun of the Tortoise one day for being so slow. "Do you ever get anywhere?" he asked with a mocking laugh."Yes," replied the Tortoise, "and I get there sooner than you think. I'll run you a race and prove it." The Hare was much amused at the idea of running a race with the Tortoise, but for the fun of the thing he agreed. So the Fox, who had consented to act as judge, marked the distance and started the runners off. The Hare was soon far out of sight, and to make the Tortoise feel very deeply how ridiculous it was for him to try a race with a Hare, he lay down beside the course to take a nap until the Tortoise should catch up.The Tortoise meanwhile kept going slowly but steadily, and, after a time, passed the place where the Hare was sleeping. </div>
+
+
+<div> Enter the secret key </div>
+<input type="text" id="secretKey" class="secretKey"></input>
+
+<div> Enter the Input text </div>
+<textarea type="text" id="inputText" class="message"></textarea>
+
+<input class="formSubmit" type="submit" value="Encrypt and Decrypt"></input>
+
+
+
+<div class="testing">  This is the testing, </div>
+
+<div>
+     <input type="radio" id="testing"/>
+     <label for="test">Please select the radio box for testing the other 2 cases.</label>
+     <div> Default case is when testing is not selected </div>
+</div>
+<div>
+     <input type="radio" id="case2"/>
+     <label for="test">Please select the radio box for testing the  case 2 </label>
+</div>
+<div>
+     <input type="radio" id="case3"/>
+     <label for="test">Please select the radio box for testing the case 3</label>
+</div>
+
+<button onclick="reset()"> Reset </button>
+<div class="red"> *Make sure to select only one case at a time</div>
+
+</form>
+
+<div id="encrypting" class="encrypting"></div>
+<div id="decrypting" class="decrypting"></div>
+
+</body>
+<script type="text/javascript" src="main.js"></script>	
+<script type="text/javascript" src="md5.js"></script>
+<script type="text/javascript" src="packet.js"></script>
+</html>
